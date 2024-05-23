@@ -6,3 +6,17 @@
 
 ## Linux Installation
 Follow this link https://developer.android.com/studio/install#linux
+
+## Setting up our First Project
+
+- Create a new Project
+- Select Empty Activity under Phone and Tablet
+- Name your application let's say MyFirstApp
+- Name your Package let's say learning.myFirstApp
+- Choose Location according to you
+- Set default SDK if you are beginner
+- Click on Finish
+
+## Setting Emulator
+-  on right Hand side got to Device Manager
+- https://www.youtube.com/watch?v=DilpTYS-MHQ&pp=ygUmSG93IHRvIHNldHVwIGVtdWxhdG9yIGluIGFuZHJvaWQgc3RkaW8%3D
