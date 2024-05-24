@@ -32,8 +32,7 @@ fun main(){
 ## Val vs Var
 
 let's say we have
-```
-python
+```Kotlin
 fun main(){
     val number1=1
 }
