@@ -11,7 +11,7 @@ var userName = "Name"
 
 
 ## DataType
-Refer to this Page https://kotlinlang.org/docs/numbers.html
+Refer to this Page [Here](https://kotlinlang.org/docs/numbers.html)
 - Integer
 - Booleans
 - Characters
@@ -26,6 +26,16 @@ If you want to run Kotlin online [Here](https://play.kotlinlang.org/#eyJ2ZXJzaW9
 ```
 fun main(){
     println("Hello world!")
+}
+```
+
+## Val vs Var
+
+let's say we have
+```
+Kotlin
+fun main(){
+    val number1=1
 }
 ```
 
