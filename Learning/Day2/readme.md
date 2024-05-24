@@ -168,9 +168,9 @@ fun main(){
 - The main() function is the entry point of your program.
 - It prompts the user to enter the number of games they want to play (NumberOfGames).
 - It initializes variables:
-- -playerChoice and computerChoice to -1 (initial values).
-- -games to 0 (initial number of games played).
-- -win to 0 (initial number of wins).
+- - playerChoice and computerChoice to -1 (initial values).
+- - games to 0 (initial number of games played).
+- - win to 0 (initial number of wins).
 - It enters a while loop that continues until the number of games played (games) reaches the specified NumberOfGames.
 - Inside the loop:
 - The computer randomly selects its choice (computerChoice).
