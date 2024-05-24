@@ -49,3 +49,30 @@ Conclusion:
 - val : Is mutable
 - var : Is immutable
 
+## Specifying the type manually
+```kotlin
+fun main(){
+    var myAge : Byte = 35
+    println(myAge)
+}
+```
+So we can change the type variable like above code.
+
+##  If Else Statements
+```kotlin
+fun main(){
+    if(true){
+        println("true is printed")
+    }else{
+        println("false is printed")
+    }
+}
+```
+
+## Readln and toInt
+```kotlin
+fun main(){
+   var age = readln().toInt()
+}
+```
+In above code we are declearing age as variable and Taking input ```readln()``` by default we get String.But for age we have to convert into int by ```toInt()```
