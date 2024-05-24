@@ -76,3 +76,18 @@ fun main(){
 }
 ```
 In above code we are declearing age as variable and Taking input ```readln()``` by default we get String.But for age we have to convert into int by ```toInt()```
+
+## Else if and the in keyword
+```kotlin
+fun main(){
+   var age = readln().toInt()
+
+   if (age >= 50){
+        println("You are too old for club Go home ")
+   }else if(age >= 18){
+    println("You are Welcome to club")
+   }else{
+    println("Go home parents are waiting!")
+   }
+}
+```
