@@ -34,14 +34,14 @@ fun main(){
 let's say we have
 ```Kotlin
 fun main(){
-    val number1=1
-    number1=2
+    val number1 = 1
+    number1 = 2
 }
 ```
-number1=2 will give error because we can't change value of number 1 because we decleared it as val type. So we use var which means variable.
+```Kotlin number1=2``` will give error because we can't change value of number1 because we decleared it as val type. So we use var which means variable.
 ```Kotlin
 fun main(){
-    var number1=1
-    number1=2
+    var number1 = 1
+    number1 = 2
 }
 ``` 
