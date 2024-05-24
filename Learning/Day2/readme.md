@@ -45,3 +45,7 @@ fun main(){
     number1 = 2
 }
 ``` 
+Conclusion:
+- val : Is mutable
+- var : Is immutable
+
