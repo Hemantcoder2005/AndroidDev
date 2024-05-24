@@ -91,3 +91,95 @@ fun main(){
    }
 }
 ```
+
+# Let's Make a Game
+## Rock-Paper-Scissors Game
+A simple command-line Rock-Paper-Scissors game implemented in Kotlin. Play against the computer and see if you can win!
+## Rules
+- Rock beats scissors.
+- Scissors beat paper.
+- Paper beats rock.
+```kotlin
+fun getName(choice: Int): String {
+    return when (choice) {
+        1 -> "rock"
+        2 -> "paper"
+        3 -> "scissor"
+        else -> "unknown"
+    }
+}
+fun main(){
+    println("Enter the number of games do you want to play : ")
+    var NumberOfGames= readln().toInt()
+    var playerChoice = -1
+    var computerChoice = -1
+    var games=0
+    var win=0
+    while(games<NumberOfGames){
+        computerChoice = (1..3).random()
+        println("------------Menu--------------")
+        println("1 : rock")
+        println("2 : paper")
+        println("3 : scissor")
+        println("------------------------------")
+        println("Select your Choice from (1-3)")
+        playerChoice= readln().toInt()
+        if (playerChoice  !in (1..3)){
+            println("Please select correct choice from 1-3 ")
+        }
+        var comp_str_choice =getName(computerChoice)
+        var player_str_choice =getName(playerChoice)
+        println("Computer Choice: $comp_str_choice")
+        println("Your choice: $player_str_choice")
+        if(computerChoice == playerChoice){
+            println("Draw!")
+        }else{
+            
+            if ((computerChoice == 1 && playerChoice == 2) || (computerChoice == 3 && playerChoice == 1) || (computerChoice == 2 || playerChoice == 3) ){
+                println("You win")
+                win++
+            }else{
+                println("You lose ")
+            }
+            games++
+        }
+    }
+    println("--------------------Final Score------------------")
+    if(win == NumberOfGames-win){
+        println("Draw!📍📍📍")
+    }else if(win>NumberOfGames - win){
+        print("You Win!🎉🎉🎉🎉")
+    }else{
+        print("You lose!😒😒😒😒")
+    }
+    
+}
+```
+
+## Function getName(choice: Int): String:
+- This function takes an integer choice as an argument and returns a corresponding string (either “rock,” “paper,” “scissor,” or “unknown”) based on the value of choice.
+- It uses a when expression (similar to a switch statement in other languages) to handle different cases:
+- - If choice is 1, it returns “rock.”
+- - If choice is 2, it returns “paper.”
+- - If choice is 3, it returns “scissor.”
+- - Otherwise (if choice is not 1, 2, or 3), it returns “unknown.”
+
+## Main Function:
+- The main() function is the entry point of your program.
+- It prompts the user to enter the number of games they want to play (NumberOfGames).
+- It initializes variables:
+- -playerChoice and computerChoice to -1 (initial values).
+- -games to 0 (initial number of games played).
+- -win to 0 (initial number of wins).
+- It enters a while loop that continues until the number of games played (games) reaches the specified NumberOfGames.
+- Inside the loop:
+- The computer randomly selects its choice (computerChoice).
+- The user is presented with a menu to select their choice (rock, paper, or scissors).
+- If the user’s choice is not within the range 1 to 3, an error message is displayed.
+- The game outcome (win/lose/draw) is determined based on the rules of Rock-Paper-Scissors.
+- The game count (games) is incremented.
+- If the user wins, the win count is incremented.
+- After all games are played, the final score is displayed:
+- If the user and computer have the same number of wins, it’s a draw.
+- If the user has more wins than losses, the user wins.
+- Otherwise, the user loses.
