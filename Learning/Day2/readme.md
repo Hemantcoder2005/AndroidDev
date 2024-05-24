@@ -38,7 +38,7 @@ fun main(){
     number1 = 2
 }
 ```
-```Kotlin number1=2``` will give error because we can't change value of number1 because we decleared it as val type. So we use var which means variable.
+```number1=2``` will give error because we can't change value of number1 because we decleared it as val type. So we use var which means variable.
 ```Kotlin
 fun main(){
     var number1 = 1
