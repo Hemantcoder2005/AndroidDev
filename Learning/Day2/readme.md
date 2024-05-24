@@ -11,6 +11,6 @@ var userName = "Name"
 
 
 ## DataType
-Refer to this Page [Here(https://kotlinlang.org/docs/numbers.html)]
+Refer to this Page [Here (https://kotlinlang.org/docs/numbers.html)]
 ### Integer (INT)
 
