@@ -33,7 +33,7 @@ fun main(){
 
 let's say we have
 ```
-Kotlin
+python
 fun main(){
     val number1=1
 }
