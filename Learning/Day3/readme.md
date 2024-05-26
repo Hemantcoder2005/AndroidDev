@@ -39,7 +39,7 @@ fun makeCoffee(sugarCount : Int){
 }
 ```
 
-- Now move forward to make our coffee machine to address people with their names
+- Now move forward to make our coffee machine to address people with their names (File : fun3.kt)
 
 ```kotlin
 fun main(){
@@ -76,3 +76,38 @@ fun makeCoffee(sugarCount : Int ,name : String ){
 - You can Explore with input sugar and name.
 
 ### Let's function to return some thing!
+- let's build basic function to sum two number and the it will return (File : fun4.kt)
+```kotlin
+fun main(){
+    var sum = getsum(1,2)
+    println(sum)
+}
+fun getsum(a : Int , b : Int) : Int{
+    return a+b
+}
+```
+- So we have to decleare what is the datatype of arguments(like a and b in this case) and we also we have to decleare what type of datType will retuen from function (like in this case it is a Integer).
+
+- Go and explore and try to make calculator take inputs from user and print it.
+
+## Classes
+### Creating First Classes
+- classes uses ```class``` in kotlin
+- let say we have class name dog
+```kotlin
+class Dog(name : String , color : String){
+    init {
+        bark(name)
+    }
+    fun bark(name : String){
+        println("$name says Woof! Woof!")
+    }
+}
+fun main(){
+    var name = "Daisy"
+    var color = "Black"
+    var daisy = Dog(name,color)
+}
+```
+- When we call class Dog then  init function in Dog get executed for basic setup written in init.
+- In this case dog bark on declearing in main function
