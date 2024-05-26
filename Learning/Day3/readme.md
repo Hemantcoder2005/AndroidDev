@@ -1,5 +1,6 @@
 # Functions And Classes
 ## Functions
+### Introduction
 - let's create a function we use ```fun <name_of_function> ``` fun stands for function then  we have to write name of function.
 - Let's see example (File: fun1.kt)
 ```kotlin
@@ -72,3 +73,6 @@ fun makeCoffee(sugarCount : Int ,name : String ){
 }
 ```
 
+- You can Explore with input sugar and name.
+
+### Let's function to return some thing!
