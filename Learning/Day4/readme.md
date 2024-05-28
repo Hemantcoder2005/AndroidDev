@@ -60,3 +60,41 @@ fun main(){
 [HDD, SSD, RAM, MotherBoard, Processor, GPU]
 ```
 - - So we are giving index like 0 and inserting "HDD" overthere So overall indexing will change.
+- Modifying a list (File : fun7.kt)
+```kotlin
+fun main(){
+    val shoppingList =  mutableListOf("SSD" , "RAM", "MotherBoard" , "Processor" , "GPU" )
+    shoppingList[0] = "HDD" 
+    println(shoppingList)
+}
+```
+```
+OUTPUT : 
+[HDD, RAM, MotherBoard, Processor, GPU]
+```
+-  Check a element exist in List or not (File : fun8.kt)
+```kotlin
+fun main(){
+    val shoppingList =  mutableListOf("SSD" , "RAM", "MotherBoard" , "Processor" , "GPU" )
+    println(shoppingList.contains("RAM"))
+}
+```
+We will get bool value in this case we get true.
+- Looping List (File : fun9.kt)
+```kotlin
+fun main(){
+    val shoppingList =  mutableListOf("SSD" , "RAM", "MotherBoard" , "Processor" , "GPU" )
+    for (i in shoppingList){
+        println(i)
+    }
+}
+```
+- Looping List with Index
+```kotlin
+fun main(){
+    val shoppingList =  mutableListOf("SSD" , "RAM", "MotherBoard" , "Processor" , "GPU" )
+    for( i in 0  until  shoppingList.size){
+        println(shoppingList[i])
+    }
+}
+```
