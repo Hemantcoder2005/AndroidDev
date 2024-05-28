@@ -39,3 +39,25 @@ fun main(){
     println(shoppingList)
 }
 ```
+- Index in List (File : fun5.kt)
+```kotlin
+fun main(){
+    val shoppingList =  mutableListOf("SSD" , "RAM", "MotherBoard" , "Processor" , "GPU" )
+    shoppingList.removeAt(0) // Removing at index 0
+    println(shoppingList)
+}
+```
+```
+- - So we are removing element at index 0 from our shoppingList.So we can see SSD is removing
+- Adding Element At specific position (File : fun6.kt)
+```kotlin
+fun main(){
+    val shoppingList =  mutableListOf("SSD" , "RAM", "MotherBoard" , "Processor" , "GPU" )
+    shoppingList.add(0 , "HDD") 
+    println(shoppingList)
+}
+```
+```
+[HDD, SSD, RAM, MotherBoard, Processor, GPU]
+```
+- - So we are giving index like 0 and inserting "HDD" overthere So overall indexing will change.
