@@ -47,7 +47,6 @@ fun main(){
     println(shoppingList)
 }
 ```
-```
 - - So we are removing element at index 0 from our shoppingList.So we can see SSD is removing
 - Adding Element At specific position (File : fun6.kt)
 ```kotlin
